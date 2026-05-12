@@ -1,0 +1,8 @@
+DB Error: Transaction already in progress
+Traceback (most recent call last):
+  File "C:\Users\Garden\OneDrive\Desktop\RiceMoto_Final\ricemoto_pos\database\database_manager.py", line 1156, in add_order
+    self.conn.start_transaction()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Garden\OneDrive\Desktop\RiceMoto_Final\ricemoto_pos\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1861, in start_transaction
+    raise ProgrammingError("Transaction already in progress")
+mysql.connector.errors.ProgrammingError: Transaction already in progress
